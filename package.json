@@ -1,0 +1,21 @@
+{
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^6.0.0-beta.1",
+    "@astrojs/node": "^5.0.0-beta.1",
+    "@astrojs/vercel": "^3.0.0-beta.1",
+    "@auth/astro": "../authjs/packages/frameworks-astro",
+    "@auth/core": "latest",
+    "astro": "^2.0.0-beta.2"
+  }
+}
