@@ -1,5 +1,5 @@
 ---
-import { getSession } from "@auth/astro"
+import { getSession } from "../lib"
 import { authOpts } from "./api/auth/[...astroAuth]";
 
 let session = await getSession(Astro.request, authOpts)

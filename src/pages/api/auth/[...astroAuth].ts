@@ -1,4 +1,4 @@
-import { AstroAuth, type AstroAuthConfig } from "@auth/astro"
+import { AstroAuth, type AstroAuthConfig } from "../../../lib"
 import GitHub from "@auth/core/providers/github"
 
 export const authOpts: AstroAuthConfig = {
