@@ -6,8 +6,8 @@ import { authOpts } from './api/auth/[...astroAuth]';
 ---
 
 <Layout title="Welcome to Astro Auth">
-  <!-- <Auth authOpts={authOpts}> -->
-    <!-- {(session: Session) =>  -->
+  <Auth authOpts={authOpts}>
+    {(session: Session) => 
       <main>
         <h1>Astro + AuthJS</h1>
         <p>
@@ -15,10 +15,10 @@ import { authOpts } from './api/auth/[...astroAuth]';
         </p>
         <Signin provider="github">Login</Signin>
         <Signout>Logout</Signout>
-        <!-- <p>
+        <p>
           {session ? `Logged in as ${session.user?.name}` : 'Not logged in'}
-        </p> -->
+        </p>
       </main>
-    <!-- } -->
-  <!-- </Auth> -->
+    }
+  </Auth>
 </Layout>

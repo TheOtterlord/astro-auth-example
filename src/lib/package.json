@@ -15,19 +15,17 @@
   "repository": "https://github.com/nextauthjs/next-auth.git",
   "author": "Otterlord <otterlord.dev@gmail.com>",
   "scripts": {
-    "build": "tsup --config ./tsup.config.js && node scripts/postbuild",
     "patch": "npm version patch --no-git-tag-version"
   },
   "devDependencies": {
     "@types/cookie": "0.5.1",
     "@types/set-cookie-parser": "^2.4.2",
     "astro": "^2.0.0-beta.2",
-    "next-auth": "latest",
-    "tsup": "^6.5.0",
+    "next-auth": "workspace:*",
     "typescript": "^4.9.3"
   },
   "dependencies": {
-    "@auth/core": "latest",
+    "@auth/core": "workspace:*",
     "set-cookie-parser": "^2.5.1"
   },
   "peerDependencies": {
@@ -37,12 +35,12 @@
   "types": "./index.ts",
   "exports": {
     ".": {
-      "types": "./index.d.ts",
-      "import": "./index.js"
+      "types": "./index.ts",
+      "import": "./index.ts"
     },
     "./client": {
-      "types": "./client.t.ts",
-      "import": "./client.js"
+      "types": "./client.ts",
+      "import": "./client.ts"
     },
     "./components": {
       "types": "./components.ts",
