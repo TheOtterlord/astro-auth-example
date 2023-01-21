@@ -16,9 +16,6 @@ attrs.class = `sign-out ${attrs.class ?? ''}`
 </button>
 
 <script>
-  (async function() {
-    let { signOut } = await import('../client')
-
-    document.querySelector('.sign-out')?.addEventListener('click', () => signOut())
-  })()
+  import { signOut } from '../client'
+  document.querySelector('.sign-out')?.addEventListener('click', () => signOut())
 </script>
