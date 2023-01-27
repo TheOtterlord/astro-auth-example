@@ -11,9 +11,10 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/node": "^5.0.1",
     "@astrojs/vercel": "^3.0.0",
     "@auth/core": "latest",
     "astro": "^2.0.2",
-    "auth-astro": "^1.0.1"
+    "auth-astro": "^1.0.2"
   }
 }
