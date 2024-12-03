@@ -5,15 +5,14 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/vercel": "^3.0.0",
-    "@auth/core": "latest",
-    "astro": "^2.3.1",
-    "auth-astro": "^3.0.0"
+    "@astrojs/vercel": "^8.0.0",
+    "@auth/core": "0.37.4",
+    "astro": "^5.0.1",
+    "auth-astro": "^4.2.0"
   }
 }
